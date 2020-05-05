@@ -1,0 +1,132 @@
+
+html, body{
+
+    font-family: 'News Cycle', sans-serif;
+    color: #666565;
+    height:100%;
+       
+}
+
+p{
+    font-size: 1.25rem;
+    font-weight: 300;       
+}
+section {
+    min-height: 100%;
+}
+    
+
+td{
+    white-space:nowrap
+}
+
+i{
+    font-size: 1.8rem;
+}
+
+
+a:link{
+    text-decoration:none;
+}
+
+img{
+    /*background-color: rgba(0,0,0,0.5);*/
+    width: 200px;
+    /*height:: 200px;*/
+    border-radius: 50%;
+}
+
+
+.card{
+    background-color: rgba(200,200,200,0.1);
+}
+
+.imagenNav1{
+    /*https://unsplash.com/photos/rnr8D3FNUNY*/
+    background-image:   url('../img/img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-light {
+    background-image: white;
+    opacity: 0.92;
+}
+
+
+.imagenNav2{
+    background-image:   url('../img/img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*.imagenNav3{*/
+    /*https://unsplash.com/photos/BbDb3IMR_rs*/
+    /*background-image:   url('../img/img3.jpg');*/
+/*    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+.imagenNav4{
+    /*https://unsplash.com/photos/bU6JyhSI6zo*/
+    background-image:  url('../img/img4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.title_h2{
+    color: #666565;
+    text-transform: uppercase;
+    text-shadow: -5px -4px 4px #d1d1d1; 
+}
+
+
+/* Pantalla mayores de 700px*/
+@media only screen and (min-width: 700px) {    
+
+}
+
+/* Pantalla menores de 700px*/
+@media only screen and (max-width: 700px) {
+    .imagenNav1{
+        background-image:   url('../img/img1-xs.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .imagenNav2{
+        background-image:   url('../img/img2-xs.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*.imagenNav3{*/
+        /*background-image:   url('../img/img3-xs.jpg');*/
+        /*background-size: cover;*/
+        /*background-repeat: no-repeat;*/
+    /*}*/
+
+    .imagenNav4{
+        background-image:   url('../img/img4-xs.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    p{
+        color: black;
+        font-size: 1rem;
+        font-weight: 300;
+
+    }
+
+    i{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
