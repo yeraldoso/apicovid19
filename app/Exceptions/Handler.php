@@ -48,7 +48,7 @@ class Handler extends ExceptionHandler
     public function report(Exception $exception)
     {
 
-        //Para activar las notificaciones de sentry
+        //Para activar las notificaciones de sentry 
         if (app()->bound('sentry') && $this->shouldReport($exception)) {
             app('sentry')->captureException($exception);
         }
@@ -101,13 +101,10 @@ class Handler extends ExceptionHandler
         if (config('app.debug')) { 
             return parent::render($request, $exception);
         }else{ //Produccion
-            return $this->errorResponse("Falla inesperada. Intente luego.", 500);
+            return $this->errorResponse("Falla inesperada. Intente mas tarde.", 500);
         }
 
     }
-
-
-
 
 
 
