@@ -94,15 +94,14 @@ class Handler extends ExceptionHandler
         }
 
 
-        // return $exception;
-        // return $this->errorResponse("Falla inesperada. Intente luego.", 500);
+
 
         //Si estamos en modo desarrollo muestra descripcion del error, sino, solo un mensaje
-        if (config('app.debug')) { 
+        // if (config('app.debug')) { 
             return parent::render($request, $exception);
-        }else{ //Produccion
-            return $this->errorResponse("Falla inesperada. Intente mas tarde.", 500);
-        }
+        // }else{ //Produccion
+            // return $this->errorResponse("Falla inesperada. Intente mas tarde.", 500);
+        // }
 
     }
 
