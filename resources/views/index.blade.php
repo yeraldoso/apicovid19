@@ -3,15 +3,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-
-
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/page.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type='image/x-icon'/>
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type='image/x-icon'/>
 
     <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
     <script src="{{ asset('js/popper.js') }}"></script>
@@ -20,26 +18,25 @@
 	<title>Api Covid-19</title>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
+
     <!-- Navegacion -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-      <div class="container">
-        <a class="navbar-brand" id="titlePage"  href="#"> <strong>Api Covid-19</strong> Chile</a>
+        <a class="navbar-brand ml-3" id="titlePage"  href="#"> <strong>Api Covid-19</strong> Chile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active" id="nav1"><a class="nav-link "  href="#">Api Covid-19</a></li>
-                <li class="nav-item" id="nav2"><a class="nav-link" href="#">Fuente de información</a></li>        
-                <li class="nav-item" id="nav3"><a class="nav-link"  href="#">Endpoints</a></li>
-                <li class="nav-item" id="nav4"><a class="nav-link"  href="#">Contacto</a></li>
+            <ul class="navbar-nav ml-auto" id="top_menu">
+                <li class="nav-item" id="nav1"><a class="nav-link"  href="#apicovid19">Api Covid-19</a></li>
+                <li class="nav-item" id="nav2"><a class="nav-link"  href="#fuentes">Fuente de información</a></li>        
+                <li class="nav-item" id="nav3"><a class="nav-link"  href="#endpoints">Endpoints</a></li>
+                <li class="nav-item" id="nav4"><a class="nav-link"  href="#contacto">Contacto</a></li>
             </ul>
         </div>
-      </div>
     </nav>
-    <section class="py-5 px-1 imagenNav1" id="section_nav1" >
+    <section class="py-5 px-1 imagenNav1" id="apicovid19" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-xs-12 py-5">
@@ -48,12 +45,12 @@
                     <p class="text-justify">API COVID-19 como su nombre lo indica, es una Api-Rest para que estudiantes, desarrolladores, analistas de datos, estadísticos o cualquier persona interesada pueda tener acceso a los datos epidemiológicos del covid-19 en Chile de una forma estructurada, sencilla y rápida.</p>
                     <p class="text-justify">Este sistema busca automatizar y estandarizar el consumo de los datos mediante una Api-Rest, proceso distinto a como lo entrega actualmente el Ministerio de Ciencias, pero de igual manera efectivo y transparente para el usuario.</p>
                     <p class="text-justify">Para evitar posibles inconsistencias, duplicidad de datos o falta de información, se incorporaron procesos adicionales de extracción de datos, con comprobaciones minuciosas y exhaustivas desde la fuente oficial de información.</p>  
-                    <p class="text-justify">No existen costos, ni condiciones adicionales por el uso de esta herramienta, por favor, siéntete libre utilizarla cuando desees. </p>
+                    <p class="text-justify">No existen costos, ni condiciones adicionales por el uso de esta herramienta, por favor, siéntete libre de utilizarla cuando desees. </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-5 px-1 imagenNav2" id="section_nav2" >
+    <section class="py-5 px-1 imagenNav2" id="fuentes" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-xs-12 pt-5">
@@ -78,7 +75,7 @@
         </div>
     </section>
 
-    <section class="py-5 px-1 imagenNav3" id="section_nav3" >
+    <section class="py-5 px-1 imagenNav3" id="endpoints" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-xs-12 pt-5">
@@ -179,7 +176,7 @@
         </div>
     </section>
 
-    <section class="py-5 px-1 imagenNav4" id="section_nav4" >
+    <section class="py-5 px-1 imagenNav4" id="contacto" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 py-5" >
@@ -190,7 +187,7 @@
                         <div class="text-center" >
                             <img src="{{ asset('img/perfil.jpg') }}" class="img-fluid" alt="">
                             <p class="pt-4 font-weight-bold">Yerald Silva Uribe, Ingeniero Civil en Informática</p>
-                            <p class="text-justify">Hola, soy el creador de Api Covid-19, espero que este proyecto sea de gran ayuda para ti. Te invito a que si tienes alguna duda, sugerencia o incluso mejoras, te contactes a través de mi LinkedIn o Correo Electrónico y yo felizmente te respondo.</p>
+                            <p class="text-justify">Hola, soy el creador de Api Covid-19, espero que este proyecto sea de gran ayuda para ti. Te invito a que si tienes alguna duda, sugerencia o incluso mejoras, te contactes a través de mi LinkedIn o Correo Electrónico y yo de manera oportuna te responderé.</p>
                             <a class="mr-3"  target="_blank" href="https://www.linkedin.com/in/yerald-silva-uribe/"><i class="fab fa-linkedin"></i> Yerald Silva Uribe </a>
                             <a href="mailto:yeraldsu@gmail.com"> <i class="far fa-envelope"></i> yeraldsu@gmail.com</a>
                         </div>
@@ -205,28 +202,23 @@
 
 <script type="text/javascript">
 
-    $("#titlePage").click(function() { downScroll("#section_nav1", "#nav1"); });
-    $("#nav1").click(function() { downScroll("#section_nav1", "#nav1"); });
-    $("#nav2").click(function() { downScroll("#section_nav2", "#nav2"); });
-    $("#nav3").click(function() { downScroll("#section_nav3", "#nav3"); });
-    $("#nav4").click(function() { downScroll("#section_nav4", "#nav4"); });
+    $("#titlePage").click(function() { downScroll("#apicovid19"); });
+    $("#nav1").click(function() { downScroll("#apicovid19"); });
+    $("#nav2").click(function() { downScroll("#fuentes"); });
+    $("#nav3").click(function() { downScroll("#endpoints"); });
+    $("#nav4").click(function() { downScroll("#contacto"); });
 
   
     function downScroll(section_nav, nav)
     {
         //Baja scroll al div
         $('html,body').animate({ scrollTop: $(section_nav).offset().top},'slow');
-
-        //Elimina active
-        $('html,body').find('li.active').removeClass('active');
-
-        //Agrega active al nav seleccionado
-        $(nav).addClass( 'active' ); 
-
     }
 
-
+    //Oculta navbar en pantallazas pequeñas al hacer clic
     $("a").click(function() {  $("#navbarResponsive").removeClass('show'); });
+
+
 
 
 </script>

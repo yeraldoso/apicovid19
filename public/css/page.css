@@ -4,8 +4,10 @@ html, body{
     font-family: 'News Cycle', sans-serif;
     color: #666565;
     height:100%;
+     /*position: relative;*/
        
 }
+
 
 p{
     font-size: 1.25rem;
@@ -61,13 +63,6 @@ img{
 }
 
 
-/*.imagenNav3{*/
-    /*https://unsplash.com/photos/BbDb3IMR_rs*/
-    /*background-image:   url('../img/img3.jpg');*/
-/*    background-size: cover;
-    background-repeat: no-repeat;
-}
-*/
 .imagenNav4{
     /*https://unsplash.com/photos/bU6JyhSI6zo*/
     background-image:  url('../img/img4.jpg');
@@ -80,6 +75,12 @@ img{
     color: #666565;
     text-transform: uppercase;
     text-shadow: -5px -4px 4px #d1d1d1; 
+}
+
+
+#titlePage{
+    color: black;
+
 }
 
 
@@ -102,11 +103,6 @@ img{
         background-repeat: no-repeat;
     }
 
-    /*.imagenNav3{*/
-        /*background-image:   url('../img/img3-xs.jpg');*/
-        /*background-size: cover;*/
-        /*background-repeat: no-repeat;*/
-    /*}*/
 
     .imagenNav4{
         background-image:   url('../img/img4-xs.jpg');
