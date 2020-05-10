@@ -83,12 +83,12 @@
                     <h2 class="font-weight-light title_h2 mb-3">Endpoints</h2>
                     <hr class="py-2">
 
-                    <p class="text-justify">En esta sección se detallan todos los endpoints de la Api-Rest con su información respectiva y su correspondiente uso.</p>   
+                    <p class="text-justify">En esta sección se detallan todos los endpoints de la Api-Rest con su información respectiva y su correspondiente uso. A través del tiempo se irán incorporando mas recursos.</p>   
                     <h3 class="font-weight-light mb-3">Ejemplo de uso</h3>
                     <p class="text-justify"> Cada petición será respondida en formato JSON y solo con los metodos GET/HEAD. Por ejemplo, si se quiere acceder al endpoint <a target="_blank" href="{{Request::url()."/regiones"}}"> /regiones</a>, deberás consumirlo de la siguiente manera: </p>   
                     <p class="text-center"><a class="mr-3"  target="_blank" href="{{Request::url()."/regiones"}}"> {{Request::url()}}/regiones</a> </p>
                 </div>    
-                <div class="table-responsive px-2" >
+                <div class="table-responsive px-2 col-lg-12" >
                     <table class="table table-sm table-hover" >
                       <thead class="thead-info">
                         <tr>
@@ -114,20 +114,20 @@
                         <tr>
                             <td>/confirmados/fecha/{fecha}</td>
                             <td>confirmados.fecha</td>
-                            <td>fecha: fecha en formato dd-mm-aaaa o aaaa-mm-dd</td>
+                            <td>{fecha}: fecha en formato dd-mm-aaaa o aaaa-mm-dd</td>
                             <td>Colección con todos los confirmados de covid-19 en la fecha indicada</td>
                         </tr>
                         <tr>
                             <td>/confirmados/region/{region}</td>
                             <td>confirmados.region</td>
-                            <td>region: numero de región correspondiente en el recurso 'regiones'</td>
+                            <td>{region}: numero de región correspondiente en el recurso 'regiones'</td>
                             <td>Colección con todos los confirmados de covid-19 en la región indicada</td>
                         </tr>
                         <tr>
                             <td>/confirmados/region/{region}/fecha/{fecha}</td>
                             <td>confirmados.region.fecha</td>
-                            <td>region: numero de región correspondiente en el recurso 'regiones'<br>
-                            fecha: fecha en formato dd-mm-aaaa o aaaa-mm-dd
+                            <td>{region}: numero de región correspondiente en el recurso 'regiones'<br>
+                            {fecha}: fecha en formato dd-mm-aaaa o aaaa-mm-dd
                             </td>
                             <td>Instancia de los confirmados de covid-19 en una región y fecha específica</td>
                         </tr>
@@ -140,20 +140,20 @@
                         <tr>
                             <td>/fallecidos/fecha/{fecha}</td>
                             <td>fallecidos.fecha</td>
-                            <td>fecha: fecha en formato dd-mm-aaaa o aaaa-mm-dd</td>
+                            <td>{fecha}: fecha en formato dd-mm-aaaa o aaaa-mm-dd</td>
                             <td>Colección con todos los fallecidos de covid-19 en la fecha indicada</td>
                         </tr>
                         <tr>
                             <td>/fallecidos/region/{region}</td>
                             <td>fallecidos.region</td>
-                            <td>region: numero de región correspondiente en el recurso 'regiones'</td>
+                            <td>{region}: numero de región correspondiente en el recurso 'regiones'</td>
                             <td>Colección con todos los fallecidos de covid-19 en la región indicada</td>
                         </tr>
                         <tr>
                             <td>/fallecidos/region/{region}/fecha/{fecha}</td>
                             <td>fallecidos.region.fecha</td>
-                            <td>region: numero de región correspondiente en el recurso 'regiones'<br>
-                                fecha: fecha en formato dd-mm-aaaa o aaaa-mm-dd
+                            <td>{region}: numero de región correspondiente en el recurso 'regiones'<br>
+                                {fecha}: fecha en formato dd-mm-aaaa o aaaa-mm-dd
                             </td>
                             <td>Instancia de los fallecidos de covid-19 en una región y fecha específica</td>
                         </tr>
@@ -166,7 +166,7 @@
                         <tr>
                           <td>/grupoetario/genero/{genero}</td>
                           <td>grupoetario.genero</td>
-                          <td>genero: para femenino el parámetro es 'f', para masculino es 'm'. Pueden usarse en mayúsculas o minúsculas</td>
+                          <td>{genero}: para femenino el parámetro es 'f', para masculino es 'm'. Pueden usarse en mayúsculas o minúsculas</td>
                           <td>Colección con todos los confirmados de covid-19 del país agrupados en genero y rango etario segun el genero indicado</td>
                         </tr>
                       </tbody>

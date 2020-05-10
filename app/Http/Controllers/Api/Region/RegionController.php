@@ -13,7 +13,6 @@ class RegionController extends ApiController
     public function index()
     {
     	$regiones = Region::all();
-    	dd($regiones);
         return $this->showAll($regiones);
     }
 
