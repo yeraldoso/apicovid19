@@ -87,6 +87,7 @@
                     <h3 class="font-weight-light mb-3">Ejemplo de uso</h3>
                     <p class="text-justify"> Cada petición será respondida en formato JSON y solo con los metodos GET/HEAD. Por ejemplo, si se quiere acceder al endpoint <a target="_blank" href="{{Request::url()."/regiones"}}"> /regiones</a>, deberás consumirlo de la siguiente manera: </p>   
                     <p class="text-center"><a class="mr-3"  target="_blank" href="{{Request::url()."/regiones"}}"> {{Request::url()}}/regiones</a> </p>
+                    <p>A continuación, el listado de todos los endpoints:</p>
                 </div>    
                 <div class="table-responsive px-2 col-lg-12" >
                     <table class="table table-sm table-hover" >
