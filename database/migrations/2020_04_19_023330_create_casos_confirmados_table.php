@@ -17,7 +17,7 @@ class CreateCasosConfirmadosTable extends Migration
             $table->bigIncrements('id');
             $table->integer('codigo_region');
             $table->date('fecha');
-            $table->integer('confirmados')->unsigned();
+            $table->integer('confirmados');
             $table->integer('confirmados_acumulados')->unsigned();
             $table->decimal('porcentaje_confirmados', 8, 4);
             $table->timestamps();

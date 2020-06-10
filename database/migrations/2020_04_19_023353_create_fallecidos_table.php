@@ -17,7 +17,7 @@ class CreateFallecidosTable extends Migration
             $table->bigIncrements('id');
             $table->integer('codigo_region');
             $table->date('fecha');
-            $table->integer('fallecidos')->unsigned();
+            $table->integer('fallecidos');
             $table->integer('fallecidos_acumulados')->unsigned();
             $table->decimal('porcentaje_fallecidos', 16, 4);
             $table->timestamps();
