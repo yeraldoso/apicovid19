@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="col-md-12 px-0 py-2">
-                        <h3 class="font-weight-light mb-3">¿Cómo es el procedimiento de los datos para llegar a Api Covid-19?</h3>
+                        <h3 class="font-weight-light mb-3">¿Cuál es el procedimiento de los datos para llegar a Api Covid-19?</h3>
                         <p class="text-justify"> Todos los días se ejecuta un servicio que conecta al repositorio del MinCiencia y obtiene los datos desde los archivos CSV. Internamente el servicio los valida, normaliza y luego los almacena en la base de datos. Adicionalmente, se agrega un proceso de revisión todos los días para verificar que la información a consumir por el cliente coincida con las fuentes ofíciales.</p>     
                     </div>
                 </div>
