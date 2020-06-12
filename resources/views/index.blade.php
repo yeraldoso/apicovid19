@@ -85,7 +85,7 @@
 
                     <p class="text-justify">En esta sección se detallan todos los endpoints de la Api-Rest con su información respectiva y su correspondiente uso. A través del tiempo se irán incorporando mas recursos.</p>   
                     <h3 class="font-weight-light mb-3">Ejemplo de uso</h3>
-                    <p class="text-justify"> Cada petición será respondida en formato JSON y solo con los metodos GET/HEAD. Por ejemplo, si se quiere acceder al endpoint <a target="_blank" href="{{Request::url()."/regiones"}}"> /regiones</a>, deberás consumirlo de la siguiente manera: </p>   
+                    <p class="text-justify"> Cada petición será respondida en formato JSON y solo con el metodo GET. Por ejemplo, si se quiere acceder al endpoint <a target="_blank" href="{{Request::url()."/regiones"}}"> /regiones</a>, deberás consumirlo de la siguiente manera: </p>   
                     <p class="text-center"><a class="mr-3"  target="_blank" href="{{Request::url()."/regiones"}}"> {{Request::url()}}/regiones</a> </p>
                     <p>A continuación, el listado de todos los endpoints:</p>
                 </div>    
